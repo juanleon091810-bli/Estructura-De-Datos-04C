@@ -16,7 +16,7 @@ public class Ejercicio_Array_2 {
         int[] clientes = new int[1000];
         // Llenaremos el array con números de cédula de clientes (simulados)
         for (int i = 0; i < clientes.length; i++) {
-            clientes[i] = 500 + i; // Simulando cédulas desde 500 hasta 1599
+            clientes[i] = 500 + i; // Simulando cédulas desde 500 hasta 1499
         }
 
         System.out.print("Ingrese el número de cédula del cliente: ");
