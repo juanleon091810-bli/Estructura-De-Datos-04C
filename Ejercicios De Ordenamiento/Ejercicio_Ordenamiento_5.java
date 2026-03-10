@@ -30,8 +30,16 @@ public class Ejercicio_Ordenamiento_5 {
         }
         System.out.println("Aplicando Selección...");
         selection(numeros);
+        System.out.println("Arreglo ordenado con Selección:");
+        for (int numero: numeros) {
+            System.out.println(numero);
+        }
         System.out.println("Aplicando Inserción...");
         insertion(copiaNumeros);
+        System.out.println("Arreglo ordenado con Inserción:");
+        for (int numero: copiaNumeros) {
+            System.out.println(numero);
+        }
 
         scanner.close();
     }
