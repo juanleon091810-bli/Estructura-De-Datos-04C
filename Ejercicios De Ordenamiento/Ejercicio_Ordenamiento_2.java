@@ -21,28 +21,35 @@ public class Ejercicio_Ordenamiento_2 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("SEÑOR/A BIBLIOTECARIO/A! Ingrese la cantidad de libros recibidos:");
         int libros = scanner.nextInt();
-        long []cajaLibros = new long[libros];
+        int []cajaLibros = new int[libros];
         for(int i = 0; i < libros; i++){
-            System.out.println("Ingrese el codigo ISBN de cuatro numeros del libro " +(i+1) + " sin puntos ni comas (ej. 0000:");
-            cajaLibros[i] = scanner.nextLong();
+            System.out.println("Ingrese el codigo ISBN del libro " + (i+1) + " sin puntos ni comas (ej. 000):");
+            cajaLibros[0] = scanner.nextInt();
+
+            System.out.println("Arreglo actual:");
+            sort(cajaLibros);
+
+            System.out.print("[");
+            for(int j = 0; j < cajaLibros.length; j++){
+                System.out.print(cajaLibros[j]);
+                if(j < cajaLibros.length - 1){
+                System.out.print(", ");
+                }
+            }
+            System.out.println("]");
         }
-
-        sort(cajaLibros);
-        System.out.println(cajaLibros);
-
         scanner.close();
     }
 
-    public static void sort(long[] arr) {
+    public static void sort(int[] arr) {
         
         int n = arr.length;
-        for(int i = 1; i < n; ++i){
-            long key = arr[i];
-            int j = i-1;
+        for(int i = 0; i < n; ++i){
+            int key = arr[i];
+            int j = i - 1;
             while (j >= 0 && arr[j] > key) {
                 arr[j+1] = arr[j];
-                j = j-1;
-                System.out.println(arr[j]);
+                j = j - 1;
             }
             arr[j+1] = key;
         }

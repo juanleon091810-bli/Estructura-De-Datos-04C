@@ -39,7 +39,13 @@ public class Ejercicio_Ordenamiento_3 {
         System.out.print(peso + "KG, ");
     }
     scanner.close();
+
+// Shell es mas eficiente ya que divide el grado de elementos a ordenar haciendolo mas rapido y 
+// optimo en comparacion a otros algoritmos como insersion o seleccion
+
 }
+
+//Creamos la funcion Shell para ordenar el arreglo de pesos
 
     public static void sort(double[] arr) {
         int n = arr.length;
