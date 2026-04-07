@@ -14,12 +14,19 @@ public class App {
         int opc;
         
         do {
+            System.out.println("\n=====================");
+            System.out.println("MENU DE OPCIONES");
+            System.out.println("=====================");
             System.out.println("1. Agregar canción");
             System.out.println("2. Mostrar playlist");
             System.out.println("3. Duración total de la playlist");
             System.out.println("0. Salir");
+            System.out.println("======================");
+            System.out.println("Seleccione una opcion");
             opc = sc.nextInt();
             sc.nextLine();
+            System.out.println("======================");
+
 
             switch (opc) {
                 case 1:
