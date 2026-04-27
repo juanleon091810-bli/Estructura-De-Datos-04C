@@ -1,0 +1,17 @@
+public class Capa {
+
+    String nombre;
+    boolean visible;
+    String tipo;
+
+    Capa siguiente;
+    Capa anterior;
+
+    public Capa(){}
+
+    public Capa(String nombre, boolean visible, String tipo){
+        this.nombre = nombre;
+        this.visible = visible;
+        this.tipo = tipo;
+    }
+}
