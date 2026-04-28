@@ -22,7 +22,7 @@ public class App {
             System.out.println("2. Siguiente Foto");
             System.out.println("3. Foto Anterior");
             System.out.println("4. Reproducir Galería");
-            System.out.println("5. Salir");
+            System.out.println("0. Salir");
             System.out.println("=========================");
             System.out.println("\nIngrese una opcion: ");
             opcion = sc.nextInt();
@@ -52,12 +52,12 @@ public class App {
                 case 4:
                     galeria.reproducirGaleria();
                     break;
-                case 5:
+                case 0:
                     System.out.println("Saliendo...");
                     break;
                 default:
                     System.out.println("Opción no válida.");
             }
-        } while (opcion != 4);
+        } while (opcion != 0);
     }
 }
