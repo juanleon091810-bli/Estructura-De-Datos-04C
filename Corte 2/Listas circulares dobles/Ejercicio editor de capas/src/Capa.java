@@ -13,5 +13,7 @@ public class Capa {
         this.nombre = nombre;
         this.visible = visible;
         this.tipo = tipo;
+        this.siguiente = null;
+        this.anterior = null;
     }
 }
