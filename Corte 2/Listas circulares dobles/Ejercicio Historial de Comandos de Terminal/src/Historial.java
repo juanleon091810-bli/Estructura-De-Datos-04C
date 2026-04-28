@@ -24,7 +24,7 @@ public class Historial {
             head.prev = nuevo;
             tail = nuevo;
         }
-        System.out.println("Comando agregado correctamente al historial.");
+        System.out.println("\n====Comando agregado correctamente al historial====");
     }
 
     public void arriba(Comando siguiente){
@@ -71,6 +71,6 @@ public class Historial {
             tail = actual.prev;
         }
 
-        System.out.println("Comando eliminado correctamente.");
+        System.out.println("\n====Comando eliminado correctamente====");
     }
 }
