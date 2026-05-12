@@ -50,9 +50,24 @@ public class PilaContenedores {
 
             while(actual != null){
                 if (actual == top) {
-                    
+                    System.out.println("TOP -> " + actual);
+                }
+                else{
+                    System.out.println("      " + actual);
                 }
             }
         }
+    }
+
+    public int contadorPorEmpresa(String empresa){
+        int contador = 0;
+        Contenedor actual = top;
+        while(actual != null){
+            if(actual.empresa.equals(empresa)){
+                contador++;
+            }
+            actual = actual.next;
+        }
+        return contador;
     }
 }
