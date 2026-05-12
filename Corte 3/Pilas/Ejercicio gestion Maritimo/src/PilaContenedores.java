@@ -46,7 +46,7 @@ public class PilaContenedores {
         }
         else{
             Contenedor actual = top;
-            System.out.println("||=||=||ESTADO Del MUELLE (de top a base)||=||=||");
+            System.out.println("||=||=||ESTADO DEL MUELLE (de top a base)||=||=||");
 
             while(actual != null){
                 if (actual == top) {
