@@ -41,7 +41,7 @@ public class App {
                     System.out.println("PESO (t): "); Double peso = sc.nextDouble();
                     System.out.println("CARGA: "); String tipoCarga = sc.nextLine();
 
-                    muelle.push(new Contenedor(opcion, empresa, peso, tipoCarga));
+                    muelle.push(new Contenedor(id, empresa, peso, tipoCarga));
                     System.out.println("El contenedor se ha registrado correctamente. ");
                     break;
 
@@ -69,5 +69,6 @@ public class App {
                     break;
             }
         } while (opcion !=0);
+        sc.close();
     }
 }
