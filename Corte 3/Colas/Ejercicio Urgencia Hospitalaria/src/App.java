@@ -47,7 +47,7 @@ public class App {
                     salaDeEspera.atenderTodos();
                     break;
 
-                case 3:
+                case 0:
                     System.out.println("Saliendo del sistema...");
                     break;
 
@@ -55,5 +55,6 @@ public class App {
                     System.out.println("Opcion no valida. Intente nuevamente.");
             }
         } while (opcion != 0);
+        sc.close();
     }
 }
