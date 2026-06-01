@@ -18,6 +18,9 @@ public class Fabrica {
             top = top.next;
             size--;
         }
+        else{
+            System.out.println("La pila ya se encuentra vacia.");
+        }
     }
 
     public int getSize(){
